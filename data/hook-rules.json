@@ -1,0 +1,44 @@
+{
+  "units": "mm",
+  "rules": {
+    "90": {
+      "description": "90 degree hook with straight tail",
+      "tail_length": {
+        "formula": "12db",
+        "minimum_mm": null
+      }
+    },
+    "135": {
+      "description": "135 degree stirrup hook",
+      "tail_length": {
+        "formula": "6db",
+        "minimum_mm": 75
+      }
+    },
+    "180": {
+      "description": "180 degree semicircular hook with straight tail",
+      "tail_length": {
+        "formula": "4db",
+        "minimum_mm": 60
+      }
+    }
+  },
+  "inside_bend_diameter": [
+    {
+      "min_db_mm": 6,
+      "max_db_mm": 25,
+      "formula": "6db"
+    },
+    {
+      "min_db_mm": 28,
+      "max_db_mm": 36,
+      "formula": "8db"
+    },
+    {
+      "min_db_mm": 44,
+      "max_db_mm": 57,
+      "formula": "10db"
+    }
+  ]
+}
+

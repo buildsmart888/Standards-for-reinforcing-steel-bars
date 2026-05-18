@@ -25,6 +25,20 @@ Implementation note:
 - The straight tail starts after the bend.
 - In centerline geometry, avoid double-counting the bend radius when converting detailing dimensions into path segments.
 
+## 135 Degree Hook
+
+Rule:
+
+```text
+tail_length >= max(6db, 75 mm)
+```
+
+Implementation note:
+
+- The hook is intended for seismic-style stirrup detailing.
+- The included SketchUp generator uses a 135 degree hook with a lifted end tail to reduce overlap where hooks meet.
+- Verify the exact use case against the governing project code before construction use.
+
 ## 180 Degree Hook
 
 Rule:
@@ -44,4 +58,3 @@ Implementation note:
 - Use a unique component definition name whenever hook type, bend diameter rule, cover, or tail length rule changes.
 - Keep validation strict enough to prevent degenerate arcs or zero-length first path segments.
 - Use grouped or componentized geometry for repeated stirrups to keep models lighter.
-

@@ -30,8 +30,11 @@ module ReinforcingSteelStandards
     12.0 * diameter_mm
   end
 
+  def hook_135_tail_mm(diameter_mm)
+    [6.0 * diameter_mm, 75.0].max
+  end
+
   def hook_180_tail_mm(diameter_mm)
     [4.0 * diameter_mm, 60.0].max
   end
 end
-
